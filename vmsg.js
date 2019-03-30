@@ -196,7 +196,11 @@ export class Recorder {
           });
         };
 
-    return getUserMedia({audio: true}).then(stream => {
+    return getUserMedia({audio: {
+      echoCancellation: false,
+      noiseSurpression: false,
+      volume: 1.0
+    }}).then(stream => {
       const audioCtx = this.audioCtx = new (window.AudioContext
         || window.webkitAudioContext)();
 
