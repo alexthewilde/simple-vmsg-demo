@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="vmsg.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./app.js" type="module"></script>
+    <link href="https://hiiamyes.github.io/youtube-looper/static/css/main.0a33571e.css" rel="stylesheet">
 	<style>
       * {
         padding: 0;
@@ -86,6 +87,9 @@
     </style>
   </head>
   <body>
+    <div id="root"></div>
+    <script type="text/javascript" src="https://hiiamyes.github.io/youtube-looper/static/js/main.f8db9676.js"></script>
+
   	<h1>Simple vmsg demo</h1>
   	<p>
         <a href="https://github.com/Kagami/vmsg">vmsg</a> is a recent audio recording and encoding library based on a WebAssembly version of the latest <a href="http://lame.sourceforge.net/">LAME mp3 encoder</a>.
@@ -97,8 +101,6 @@
   		<button id="recordButton">Record</button>
   	</div>
     <div id="formats"></div>
-    <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
   	<!-- <script type="text/javascript">
   		var AudioContext = window.AudioContext || window.webkitAudioContext;
 		var audioCtx = new AudioContext();
